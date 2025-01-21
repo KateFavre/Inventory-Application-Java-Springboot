@@ -1,9 +1,26 @@
 Kate Favre D287 PA
 
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
-file name:
-line number:
-change:
+Changed My Bicycle shop to My Guitar Shop on line number 14 in mainscreen.html
+Changed Shop to Guitar Shop on line 19 in mainscreen.html
+Changed Parts to Guitar Parts on line number 21 in mainscreen.html
+Changed 1 (name) to Strings on line 43 in mainscreen.html
+Added lines 51 - 86 to include 4 other parts in mainscreen.html
+Changed 1 (name) to Headstock on line 52 in mainscreen.html
+Changed 1 (name) to Body on line 52 in mainscreen.html
+Changed 1 (name) to Tuning Pegs on line 52 in mainscreen.html
+Changed 1 (name) to Guitar Knobs on line 52 in mainscreen.html
+Changed Products to Guitar Products on line 89 in mainscreen.html
+Changed 1 (name) to Acoustic on line 115 in mainscreen.html
+added lines to include 4 more products in mainscreen.html
+Changed 1 (name) to Nylon String Acoustic on line 124 in mainscreen.html
+Changed 1 (name) to Flying V Electric on line 133 in mainscreen.html
+Changed 1 (name) to Gibson Electric on line 142 in mainscreen.html
+Changed 1 (name) to Stratocaster Electric on line 151 in mainscreen.html
+
+
+
+
 
 
 
