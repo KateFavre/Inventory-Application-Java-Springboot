@@ -18,16 +18,23 @@ Changed 1 (name) to Flying V Electric on line 133 in mainscreen.html
 Changed 1 (name) to Gibson Electric on line 142 in mainscreen.html
 Changed 1 (name) to Stratocaster Electric on line 151 in mainscreen.html
 
-
-
-
-
-
-
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
-file name:
-line number:
-change:
+created a new html page in templates called about.html 
+added required meta tag on line 6 in about.html
+added required meta tag for viewport on line 7 in about.html 
+added bootstrap css on lines 9 and 10 in about.html
+Changed Title to About Page on line 12 in about.html
+added a div container for about page body on line 16 in about.html
+added an "About Us" header on line 17 in about.html
+added a paragraph tag on line 18 in about.html
+added about page text on line 19 in about.html
+
+created about page controller in controllers folder
+added imports to controller on lines 3 4 5 on AboutPageController
+added @controller annotation on line 7 on AboutPageController
+added @getMapping on lines 8 9 10 and 11 on AboutPageController
+
+
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 file name:
