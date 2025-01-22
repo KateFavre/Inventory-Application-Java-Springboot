@@ -27,7 +27,7 @@ Changed Title to About Page on line 12 in about.html
 added a div container for about page body on line 16 in about.html
 added an "About Us" header on line 17 in about.html
 added a paragraph tag on line 18 in about.html
-added about page text on line 19 in about.html
+added about page text on line 19 in about.html 
 
 created about page controller in controllers folder
 added imports to controller on lines 3 4 5 on AboutPageController
