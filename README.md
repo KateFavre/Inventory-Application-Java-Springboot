@@ -20,19 +20,48 @@ Changed 1 (name) to Stratocaster Electric on line 151 in mainscreen.html
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 created a new html page in templates called about.html 
+added thymeleaf tag on line 2 in about.html
 added required meta tag on line 6 in about.html
 added required meta tag for viewport on line 7 in about.html 
 added bootstrap css on lines 9 and 10 in about.html
 Changed Title to About Page on line 12 in about.html
 added a div container for about page body on line 16 in about.html
 added an "About Us" header on line 17 in about.html
-added a paragraph tag on line 18 in about.html
-added about page text on line 19 in about.html 
+added nav tag on line 18 in about.html
+added ul tag to line 19 in about.html
+added li tag with link to mainscreen.html on line 20 in about.html
+added li tag with link to about.html on line 21 in about.html
+added closing ul tag on line 22 in about.html
+added closing nav tag on line 23 in about.html
+added a paragraph tag on line 24 in about.html
+added about page text on line 25 in about.html 
+closed paragraph tag on line 26 in about.html
 
-created about page controller in controllers folder
-added imports to controller on lines 3 4 5 on AboutPageController
-added @controller annotation on line 7 on AboutPageController
-added @getMapping on lines 8 9 10 and 11 on AboutPageController
+created about page controller (AboutController.java) in controllers folder
+added @controller annotation on line 8 in AboutController.java
+added import statement for controller on line 4 in AboutController.java 
+added @GetMapping annotation on line 10 in AboutController.java
+added import statement for GetMapping on line 6 in AboutController.java
+added method to return about page on lines 11, 12 and 13 in AboutController.java
+added ui model import to line 5 in AboutController.java
+
+
+added nav tag to line 21 in mainscreen.html 
+added ul tag to line 22 in mainscreen.html
+added li tag with link to mainscreen.html on line 23 in mainscreen.html
+added li tag with link to about.html on line 24 in mainscreen.html
+added closing ul tag on line 25 in mainscreen.html
+added closing nav tag on line 26 in mainscreen.html
+
+added nav ul tag and css on lines 1-7 in demo.css
+added nav li margin info on lines 9-11 in demo.css
+added nav ul li a info on lines 13-18 in demo.css
+added a hover background color on lines 20-22 in demo.css
+
+added link to demo.css on line 11 in about.html
+added link to demo.css on line 13 in mainscreen.html
+
+
 
 
 
