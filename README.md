@@ -35,7 +35,7 @@ added closing ul tag on line 22 in about.html
 added closing nav tag on line 23 in about.html
 added a paragraph tag on line 24 in about.html
 added about page text on line 25 in about.html 
-closed paragraph tag on line 26 in about.html
+closed paragraph tag on line 26 in about.html 
 
 created about page controller (AboutController.java) in controllers folder
 added @controller annotation on line 8 in AboutController.java
