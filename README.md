@@ -78,12 +78,14 @@ added line 63 in BootStrapData.java to make sure productRepository is empty befo
 added line 74 closing braces for if statement starting on line 63 in BootStrapData.java
 
 added if statement on line 42 in BootStrapData.java to make sure outsourcedPartsRepository is empty before adding sample inventory 
-changed line 43 in BootStrapData.java to add new outsourced part called Strings
+changed line 43 in BootStrapData.java to add new outsourced part called strings
 changed line 44 in BootStrapData.java to set company name to Guitar Shop
 changed line 45 in BootStrapData.java to set part name to Guitar Strings 
 changed line 46 in BootStrapData.java to change inventory to 40
 changed line 45 in BootStrapData.java to set price to 10
 changed line 48 in BootStrapData.java to set Id to 100L
+changed line 49 in BootStrapData.java to save string to outsourcedPartRepository
+
 
 changed line 50 in BootStrapData.java to add new outsourced part called headstock
 changed line 51 in BootStrapData.java to set company name to Guitar Shop
@@ -113,8 +115,12 @@ changed line 74 in BootStrapData.java to change inventory to 50
 changed line 75 in BootStrapData.java to set price to 30
 changed line 76 in BootStrapData.java to set Id to 104L
 
-
-
+changed line 80 in BootStrapData.java to save strings to outsourcedPartRepository
+added line 81 in BootStrapData.java to save headstock to outsourcedPartRepository
+added line 82 in BootStrapData.java to save body to outsourcedPartRepository
+added line 83 in BootStrapData.java to save tuningPegs to outsourcedPartRepository
+added line 84 in BootStrapData.java to save guitarKnobs to outsourcedPartRepository
+added closing brace to if statement on line 85 in BootStrapData.java
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 •  The “Buy Now” button must be next to the buttons that update and delete products.

@@ -3,6 +3,7 @@ package com.example.demo.bootstrap;
 import com.example.demo.domain.OutsourcedPart;
 import com.example.demo.domain.Part;
 import com.example.demo.domain.Product;
+import com.example.demo.repositories.InhousePartRepository;
 import com.example.demo.repositories.OutsourcedPartRepository;
 import com.example.demo.repositories.PartRepository;
 import com.example.demo.repositories.ProductRepository;
@@ -38,46 +39,49 @@ public class BootStrapData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        if (outsourcedPartRepository.count() == 0) {
+            OutsourcedPart strings = new OutsourcedPart();
+            strings.setCompanyName("Guitar Shop");
+            strings.setName("Guitar Strings");
+            strings.setInv(40);
+            strings.setPrice(10.0);
+            strings.setId(100L);
 
-        if (outsourcedPartRepository.count() == 0){
-        OutsourcedPart strings= new OutsourcedPart();
-        strings.setCompanyName("Guitar Shop");
-        strings.setName("Guitar Strings");
-        strings.setInv(40);
-        strings.setPrice(10.0);
-        strings.setId(100L);
+            OutsourcedPart headstock = new OutsourcedPart();
+            headstock.setCompanyName("Guitar Shop");
+            headstock.setName("Headstock");
+            headstock.setInv(15);
+            headstock.setPrice(40.0);
+            headstock.setId(101L);
 
-        OutsourcedPart headstock= new OutsourcedPart();
-        headstock.setCompanyName("Guitar Shop");
-        headstock.setName("Headstock");
-        headstock.setInv(15);
-        headstock.setPrice(40.0);
-        headstock.setId(101L);
+            OutsourcedPart body = new OutsourcedPart();
+            body.setCompanyName("Guitar Shop");
+            body.setName("body");
+            body.setInv(30);
+            body.setPrice(60.0);
+            body.setId(102L);
 
-        OutsourcedPart body= new OutsourcedPart();
-        body.setCompanyName("Guitar Shop");
-        body.setName("body");
-        body.setInv(30);
-        body.setPrice(60.0);
-        body.setId(102L);
+            OutsourcedPart tuningPegs = new OutsourcedPart();
+            tuningPegs.setCompanyName("Guitar Shop");
+            tuningPegs.setName("Tuning Pegs");
+            tuningPegs.setInv(50);
+            tuningPegs.setPrice(40.0);
+            tuningPegs.setId(103L);
 
-        OutsourcedPart tuningPegs= new OutsourcedPart();
-        tuningPegs.setCompanyName("Guitar Shop");
-        tuningPegs.setName("Tuning Pegs");
-        tuningPegs.setInv(50);
-        tuningPegs.setPrice(40.0);
-        tuningPegs.setId(103L);
+            OutsourcedPart guitarKnobs = new OutsourcedPart();
+            guitarKnobs.setCompanyName("Guitar Shop");
+            guitarKnobs.setName("Guitar Knobs");
+            guitarKnobs.setInv(50);
+            guitarKnobs.setPrice(30.0);
+            guitarKnobs.setId(104L);
 
-        OutsourcedPart guitarKnobs= new OutsourcedPart();
-        guitarKnobs.setCompanyName("Guitar Shop");
-        guitarKnobs.setName("Guitar Knobs");
-        guitarKnobs.setInv(50);
-        guitarKnobs.setPrice(30.0);
-        guitarKnobs.setId(104L);
 
+            outsourcedPartRepository.save(strings);
+            outsourcedPartRepository.save(headstock);
+            outsourcedPartRepository.save(body);
+            outsourcedPartRepository.save(tuningPegs);
+            outsourcedPartRepository.save(guitarKnobs);
         }
-
-        outsourcedPartRepository.save(o);
         OutsourcedPart thePart=null;
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
@@ -85,7 +89,8 @@ public class BootStrapData implements CommandLineRunner {
         }
 
         System.out.println(thePart.getCompanyName());
-        */
+
+
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
             System.out.println(part.getName()+" "+part.getCompanyName());
