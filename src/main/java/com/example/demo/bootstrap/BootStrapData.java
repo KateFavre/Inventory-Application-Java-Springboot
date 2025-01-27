@@ -39,13 +39,44 @@ public class BootStrapData implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-       /*
-        OutsourcedPart o= new OutsourcedPart();
-        o.setCompanyName("Western Governors University");
-        o.setName("out test");
-        o.setInv(5);
-        o.setPrice(20.0);
-        o.setId(100L);
+        if (outsourcedPartRepository.count() == 0){
+        OutsourcedPart strings= new OutsourcedPart();
+        strings.setCompanyName("Guitar Shop");
+        strings.setName("Guitar Strings");
+        strings.setInv(40);
+        strings.setPrice(10.0);
+        strings.setId(100L);
+
+        OutsourcedPart headstock= new OutsourcedPart();
+        headstock.setCompanyName("Guitar Shop");
+        headstock.setName("Headstock");
+        headstock.setInv(15);
+        headstock.setPrice(40.0);
+        headstock.setId(101L);
+
+        OutsourcedPart body= new OutsourcedPart();
+        body.setCompanyName("Guitar Shop");
+        body.setName("body");
+        body.setInv(30);
+        body.setPrice(60.0);
+        body.setId(102L);
+
+        OutsourcedPart tuningPegs= new OutsourcedPart();
+        tuningPegs.setCompanyName("Guitar Shop");
+        tuningPegs.setName("Tuning Pegs");
+        tuningPegs.setInv(50);
+        tuningPegs.setPrice(40.0);
+        tuningPegs.setId(103L);
+
+        OutsourcedPart guitarKnobs= new OutsourcedPart();
+        guitarKnobs.setCompanyName("Guitar Shop");
+        guitarKnobs.setName("Guitar Knobs");
+        guitarKnobs.setInv(50);
+        guitarKnobs.setPrice(30.0);
+        guitarKnobs.setId(104L);
+
+        }
+
         outsourcedPartRepository.save(o);
         OutsourcedPart thePart=null;
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -60,12 +91,18 @@ public class BootStrapData implements CommandLineRunner {
             System.out.println(part.getName()+" "+part.getCompanyName());
         }
 
-        /*
-        Product bicycle= new Product("bicycle",100.0,15);
-        Product unicycle= new Product("unicycle",100.0,15);
-        productRepository.save(bicycle);
-        productRepository.save(unicycle);
-        */
+        if (productRepository.count() == 0) {
+            Product acoustic = new Product("Acoustic", 150.0, 15);
+            Product nylonAcoustic = new Product("Nylon String Acoustic", 175.0, 15);
+            Product flyingVElectric = new Product("Flying V Electric", 375.0, 15);
+            Product gibsonElectric = new Product("Gibson Electric", 575.0, 15);
+            Product stratocasterElectric = new Product("Stratocaster Electric", 475.0, 15);
+            productRepository.save(acoustic);
+            productRepository.save(nylonAcoustic);
+            productRepository.save(flyingVElectric);
+            productRepository.save(gibsonElectric);
+            productRepository.save(stratocasterElectric);
+        }
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());

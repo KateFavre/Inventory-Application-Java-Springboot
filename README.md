@@ -63,12 +63,57 @@ added link to demo.css on line 13 in mainscreen.html
 
 
 
-
-
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
-file name:
-line number:
-change:
+changed line 64 in BootStrapData.java to add acoustic guitar product to sample inventory
+changed line 65 in BootStrapData.java to add nylon string acoustic product to sample inventory
+added line 66 in BootStrapData.java to add Flying V Electric product to sample inventory
+added line 67 in BootStrapData.java to add Gibson Electric product to sample inventory
+added line 68 in BootStrapData.java to add Stratocaster Electric product to sample inventory
+changed line 69 in BootStrapData.java to save acoustic guitar product
+changed line 70 in BootStrapData.java to save nylon string acoustic product
+added line 71 in BootStrapData.java to save Flying V Electric product
+added line 72 in BootStrapData.java to save Gibson Electric product
+added line 73 in BootStrapData.java to save Stratocaster Electric product
+added line 63 in BootStrapData.java to make sure productRepository is empty before adding sample inventory 
+added line 74 closing braces for if statement starting on line 63 in BootStrapData.java
+
+added if statement on line 42 in BootStrapData.java to make sure outsourcedPartsRepository is empty before adding sample inventory 
+changed line 43 in BootStrapData.java to add new outsourced part called Strings
+changed line 44 in BootStrapData.java to set company name to Guitar Shop
+changed line 45 in BootStrapData.java to set part name to Guitar Strings 
+changed line 46 in BootStrapData.java to change inventory to 40
+changed line 45 in BootStrapData.java to set price to 10
+changed line 48 in BootStrapData.java to set Id to 100L
+
+changed line 50 in BootStrapData.java to add new outsourced part called headstock
+changed line 51 in BootStrapData.java to set company name to Guitar Shop
+changed line 52 in BootStrapData.java to set part name to Headstock
+changed line 53 in BootStrapData.java to change inventory to 15
+changed line 54 in BootStrapData.java to set price to 40
+changed line 55 in BootStrapData.java to set Id to 101L
+
+changed line 57 in BootStrapData.java to add new outsourced part called body
+changed line 58 in BootStrapData.java to set company name to Guitar Shop
+changed line 59 in BootStrapData.java to set part name to body
+changed line 60 in BootStrapData.java to change inventory to 30
+changed line 61 in BootStrapData.java to set price to 60
+changed line 62 in BootStrapData.java to set Id to 102L
+
+changed line 64 in BootStrapData.java to add new outsourced part called tuningPegs
+changed line 65 in BootStrapData.java to set company name to Guitar Shop
+changed line 66 in BootStrapData.java to set part name to Tuning Pegs
+changed line 67 in BootStrapData.java to change inventory to 50
+changed line 68 in BootStrapData.java to set price to 40
+changed line 69 in BootStrapData.java to set Id to 103L
+
+changed line 71 in BootStrapData.java to add new outsourced part called guitarKnobs
+changed line 72 in BootStrapData.java to set company name to Guitar Shop
+changed line 73 in BootStrapData.java to set part name to GuitarKnobs
+changed line 74 in BootStrapData.java to change inventory to 50
+changed line 75 in BootStrapData.java to set price to 30
+changed line 76 in BootStrapData.java to set Id to 104L
+
+
 
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
