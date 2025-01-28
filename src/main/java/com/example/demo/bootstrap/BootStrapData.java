@@ -41,7 +41,7 @@ public class BootStrapData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        /*
+        if (inhousePartRepository.count()==0) {
             InhousePart strings = new InhousePart();
             strings.setName("Guitar Strings");
             strings.setInv(40);
@@ -50,8 +50,8 @@ public class BootStrapData implements CommandLineRunner {
             inhousePartRepository.save(strings);
             InhousePart thePart = null;
             List<InhousePart> inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
-            for(InhousePart part:inhouseParts){
-                if(part.getName().equals("Guitar Strings"))thePart = part;
+            for (InhousePart part : inhouseParts) {
+                if (part.getName().equals("Guitar Strings")) thePart = part;
             }
 
             InhousePart headstock = new InhousePart();
@@ -62,17 +62,17 @@ public class BootStrapData implements CommandLineRunner {
             inhousePartRepository.save(headstock);
             InhousePart thePart = null;
             List<InhousePart> inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
-            for(InhousePart part:inhouseParts){
-                if(part.getName().equals("Headstock"))thePart = part;
+            for (InhousePart part : inhouseParts) {
+                if (part.getName().equals("Headstock")) thePart = part;
             }
-            */
+        }
 //        List<InhousePart> inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
 //        for(InhousePart part:inhouseParts){
 //            System.out.println(part.getName()+" "+part.getId());
 //
 //        }
 
-            /*
+        if (outsourcedPartRepository.count() ==0) {
             OutsourcedPart body = new OutsourcedPart();
             body.setCompanyName("International Guitar Shop");
             body.setName("Body");
@@ -82,8 +82,8 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(body);
             OutsourcedPart theOutPart = null;
             List<OutsourcedPart> outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
-            for(OutsourcedPart part:outsourcedParts){
-                if(part.getName().equals("Body"))theOutPart = part;
+            for (OutsourcedPart part : outsourcedParts) {
+                if (part.getName().equals("Body")) theOutPart = part;
             }
 
             OutsourcedPart tuningPegs = new OutsourcedPart();
@@ -95,8 +95,8 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(tuningPegs);
             OutsourcedPart theOutPart = null;
             List<OutsourcedPart> outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
-            for(OutsourcedPart part:outsourcedParts){
-                if(part.getName().equals("Tuning Pegs"))theOutPart = part;
+            for (OutsourcedPart part : outsourcedParts) {
+                if (part.getName().equals("Tuning Pegs")) theOutPart = part;
             }
 
             OutsourcedPart guitarKnobs = new OutsourcedPart();
@@ -108,10 +108,10 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(guitarKnobs);
             OutsourcedPart theOutPart = null;
             List<OutsourcedPart> outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
-            for(OutsourcedPart part:outsourcedParts){
-                if(part.getName().equals("Guitar Knobs"))theOutPart = part;
+            for (OutsourcedPart part : outsourcedParts) {
+                if (part.getName().equals("Guitar Knobs")) theOutPart = part;
             }
-
+        }
         */
 
 //        List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -119,7 +119,7 @@ public class BootStrapData implements CommandLineRunner {
 //            System.out.println(part.getName()+" "+part.getCompanyName());
 //        }
 
-
+        if (productRepository.count()==0) {
             Product acoustic = new Product("Acoustic", 150.0, 15);
             Product nylonAcoustic = new Product("Nylon String Acoustic", 175.0, 15);
             Product flyingVElectric = new Product("Flying V Electric", 375.0, 15);
@@ -131,8 +131,7 @@ public class BootStrapData implements CommandLineRunner {
             productRepository.save(gibsonElectric);
             productRepository.save(stratocasterElectric);
 
-
-
+        }
 
 //        System.out.println("Started in Bootstrap");
 //        System.out.println("Number of Products"+productRepository.count());
