@@ -66,11 +66,11 @@ public class BootStrapData implements CommandLineRunner {
                 if(part.getName().equals("Headstock"))thePart = part;
             }
             */
-        List<InhousePart> inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
-        for(InhousePart part:inhouseParts){
-            System.out.println(part.getName()+" "+part.getId());
-
-        }
+//        List<InhousePart> inhouseParts = (List<InhousePart>) inhousePartRepository.findAll();
+//        for(InhousePart part:inhouseParts){
+//            System.out.println(part.getName()+" "+part.getId());
+//
+//        }
 
             /*
             OutsourcedPart body = new OutsourcedPart();
@@ -114,12 +114,12 @@ public class BootStrapData implements CommandLineRunner {
 
         */
 
-        List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
-        for(OutsourcedPart part:outsourcedParts){
-            System.out.println(part.getName()+" "+part.getCompanyName());
-        }
+//        List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
+//        for(OutsourcedPart part:outsourcedParts){
+//            System.out.println(part.getName()+" "+part.getCompanyName());
+//        }
 
-        /*
+
             Product acoustic = new Product("Acoustic", 150.0, 15);
             Product nylonAcoustic = new Product("Nylon String Acoustic", 175.0, 15);
             Product flyingVElectric = new Product("Flying V Electric", 375.0, 15);
@@ -131,14 +131,14 @@ public class BootStrapData implements CommandLineRunner {
             productRepository.save(gibsonElectric);
             productRepository.save(stratocasterElectric);
 
-         */
 
 
-        System.out.println("Started in Bootstrap");
-        System.out.println("Number of Products"+productRepository.count());
-        System.out.println(productRepository.findAll());
-        System.out.println("Number of Parts"+partRepository.count());
-        System.out.println(partRepository.findAll());
+
+//        System.out.println("Started in Bootstrap");
+//        System.out.println("Number of Products"+productRepository.count());
+//        System.out.println(productRepository.findAll());
+//        System.out.println("Number of Parts"+partRepository.count());
+//        System.out.println(partRepository.findAll());
 
     }
 }

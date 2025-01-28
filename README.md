@@ -94,6 +94,9 @@ added line 126 in BootStrapData.java to add Gibson Electric product to sample in
 added line 127 in BootStrapData.java to add Stratocaster Electric product to sample inventory
 added lines 128-132 to save products in BootStrapData.java 
 
+added style to lines 11-34 in about.html instead of linking css (trying to make sure bootstrap css is showing up)
+added style to lines 13-36 in mainscreen.html instead of linking css (trying to make sure bootstrap css is showing up)
+
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 •  The “Buy Now” button must be next to the buttons that update and delete products.
