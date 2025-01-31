@@ -4,6 +4,8 @@ C.  Customize the HTML user interface for your customer’s application. The use
 Changed My Bicycle shop to My Guitar Shop on line number 14 in mainscreen.html
 Changed Shop to Guitar Shop on line 19 in mainscreen.html
 Changed Parts to Guitar Parts on line number 21 in mainscreen.html
+
+(* accidentally hard coded in the code below, I fix it in part E*)
 Changed 1 (name) to Strings on line 43 in mainscreen.html
 Added lines 51 - 86 to include 4 other parts in mainscreen.html
 Changed 1 (name) to Headstock on line 52 in mainscreen.html
@@ -68,7 +70,8 @@ E.  Add a sample inventory appropriate for your chosen store to the application.
 added line 31 in BootStrapData.java to add InhousePartRespository
 changed line 34 to include InhousePartRepository in BootStrapData.java
 added line 38 in BootStrapData.java to include InhousePartRepository
-added line 44 to initialize inhouseparts list in BootStrapData.java
+added line 44 to have if statement to check if partRespository is empty before adding parts in BootStrapData.java
+
 
 changed line 45 in BootStrapData.java to add new outsourced part called strings
 changed line 46 in BootStrapData.java to set part name to Guitar Strings 
@@ -76,28 +79,21 @@ changed line 47 in BootStrapData.java to change inventory to 40
 changed line 48 in BootStrapData.java to set price to 10
 changed line 49 in BootStrapData.java to set Id to 100L
 changed line 50 in BootStrapData.java to save string to inhousePartRepository
-added line 51 to set thePart to null in BootStrapData.java
-added line 52 to search through inhousePartRepository list
-added lines 54-56 to include for each loop that sets thePart to Guitar Strings if name matches Guitar Strings
-added lines 57-67 in BootStrapData.java to add headstock to inhousePartRepository
-added lines 69-73 to print names and ids of inhouse parts in BootStrapData.java
+added lines 52-57 in BootStrapData.java to add headstock to inhousePartRepository
+added lines 59-65 to add outsourced part called Body in BootStrapData.java
+added lines 67-73 to add outsourced part called Tuning Pegs in BootStrapData.java
+added lines 75-81 to add outsourced part called Guitar Knobs in BootStrapData.java
 
-added lines 76-87 to add outsourced part called Body in BootStrapData.java
-added lines 89-100 to add outsourced part called Tuning Pegs in BootStrapData.java
-added lines 102-113 to add outsourced part called Guitar Knobs in BootStrapData.java
-added lines 117-120 to print outsourced part names and company name in BootStrap.java
-
-changed line 123 in BootStrapData.java to add acoustic guitar product to sample inventory
-changed line 124 in BootStrapData.java to add nylon string acoustic product to sample inventory
-added line 125 in BootStrapData.java to add Flying V Electric product to sample inventory
-added line 126 in BootStrapData.java to add Gibson Electric product to sample inventory
-added line 127 in BootStrapData.java to add Stratocaster Electric product to sample inventory
-added lines 128-132 to save products in BootStrapData.java 
+added if statement to line 86 to check if product repo is empty in BootStrapData.java
+added lines 87-91 to create 5 new products in BootStrapData.java
+added lines 92-96 to save products in BootStrapData.java 
 
 added style to lines 11-34 in about.html instead of linking css (trying to make sure bootstrap css is showing up)
 added style to lines 13-36 in mainscreen.html instead of linking css (trying to make sure bootstrap css is showing up)
 
-added if statements to lines 44, 75, and 122 in BootStrapData.java to make sure repositories are empty before adding sample inventory 
+changed lines 71-115 back to original code in mainscreen.html (I thought part C wanted me to hard code in parts, I realize that was a mistake.)
+changed lines 143 - 187 back to original code in mainscreen.html (same thing, thought that part c wanted me to hard code in products.)
+
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 •  The “Buy Now” button must be next to the buttons that update and delete products.
