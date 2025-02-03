@@ -99,9 +99,17 @@ F.  Add a “Buy Now” button to your product list. Your “Buy Now” button m
 •  The “Buy Now” button must be next to the buttons that update and delete products.
 •  The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
 •  Display a message that indicates the success or failure of a purchase.
-file name:
-line number:
-change:
+
+added line 78 in mainscreen.html to include buy now button
+create buyNowSuccess.html to indicate success of purchase 
+created nuyNowFailure.html to indicate failure of purchase
+changed line 5 title in buyNowSuccess.html and buyNowFailure.html to Buy Now Success and Buy Now Failure 
+added h1 tag on line 8 in buyNowSuccess.html to display success message
+added link on line 9 in buyNowSuccess.html to link to mainscreen.html
+added h1 tag on line 8 in buyNowFailure.html to display failure message
+added link on line 9 in buyNowFailure.html to link to mainscreen.html
+
+
 
 G.  Modify the parts to track maximum and minimum inventory by doing the following:
 •  Add additional fields to the part entity for maximum and minimum inventory.
