@@ -100,7 +100,7 @@ F.  Add a “Buy Now” button to your product list. Your “Buy Now” button m
 •  The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
 •  Display a message that indicates the success or failure of a purchase.
 
-added line 78 in mainscreen.html to include buy now button
+added line 114 in mainscreen.html to include buy now button
 create buyNowSuccess.html to indicate success of purchase 
 created nuyNowFailure.html to indicate failure of purchase
 changed line 5 title in buyNowSuccess.html and buyNowFailure.html to Buy Now Success and Buy Now Failure 
