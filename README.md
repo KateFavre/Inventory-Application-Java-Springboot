@@ -108,7 +108,10 @@ added h1 tag on line 8 in buyNowSuccess.html to display success message
 added link on line 9 in buyNowSuccess.html to link to mainscreen.html
 added h1 tag on line 8 in buyNowFailure.html to display failure message
 added link on line 9 in buyNowFailure.html to link to mainscreen.html
-
+created a BuyProductController to handle request from button in mainscreen.html
+added lines 16 and 17 in BuyProductController to inject ProductRepository
+added lines 19-21 to Getmapping for /buyProduct in BuyProductController and create optional product variable
+added lines 23 - 35 to include if/else statements to check if product inventory is greater than 0 and decrement and return buyNowSuccess if it is. If Product inventory 0 or product not found return buyNowFailure.html
 
 
 G.  Modify the parts to track maximum and minimum inventory by doing the following:
