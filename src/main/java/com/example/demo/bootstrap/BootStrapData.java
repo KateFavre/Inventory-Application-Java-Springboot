@@ -47,6 +47,8 @@ public class BootStrapData implements CommandLineRunner {
             strings.setInv(40);
             strings.setPrice(10.0);
             strings.setId(100L);
+            strings.setminInv(1);
+            strings.setmaxInv(100);
             inhousePartRepository.save(strings);
 
             InhousePart headstock = new InhousePart();
@@ -54,6 +56,8 @@ public class BootStrapData implements CommandLineRunner {
             headstock.setInv(15);
             headstock.setPrice(40.0);
             headstock.setId(101L);
+            headstock.setminInv(1);
+            headstock.setmaxInv(100);
             inhousePartRepository.save(headstock);
 
             OutsourcedPart body = new OutsourcedPart();
@@ -62,6 +66,8 @@ public class BootStrapData implements CommandLineRunner {
             body.setInv(40);
             body.setPrice(10.0);
             body.setId(102L);
+            body.setminInv(1);
+            body.setmaxInv(100);
             outsourcedPartRepository.save(body);
 
             OutsourcedPart tuningPegs = new OutsourcedPart();
@@ -70,6 +76,8 @@ public class BootStrapData implements CommandLineRunner {
             tuningPegs.setInv(50);
             tuningPegs.setPrice(40.0);
             tuningPegs.setId(103L);
+            tuningPegs.setminInv(1);
+            tuningPegs.setmaxInv(100);
             outsourcedPartRepository.save(tuningPegs);
 
             OutsourcedPart guitarKnobs = new OutsourcedPart();
@@ -78,6 +86,8 @@ public class BootStrapData implements CommandLineRunner {
             guitarKnobs.setInv(50);
             guitarKnobs.setPrice(30.0);
             guitarKnobs.setId(104L);
+            guitarKnobs.setminInv(1);
+            guitarKnobs.setmaxInv(100);
             outsourcedPartRepository.save(guitarKnobs);
 
         }

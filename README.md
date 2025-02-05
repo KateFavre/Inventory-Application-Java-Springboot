@@ -120,9 +120,18 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
 •  Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
 •  Rename the file the persistent storage is saved to.
 •  Modify the code to enforce that the inventory is between or at the minimum and maximum value.
-file name:
-line number:
-change:
+
+added lines 31-34 in Part.java to add fields and Minimum for Max and Min inventory for parts
+changed line 53 in Part.java to add minInv and maxInv to constructor
+added lines 49-50 to set default values for maxInv and minInv in Part.java
+added lines 58-59 to set default values for maxInv and minInv w additional constructor in Part.java
+added lines 92-104 in Part.java to include getters and setters for maxInv and minInv
+added lines 50-51, 59-60, 69-70, 79-80, and 89-90 to include max and minimum fields for sample inventory in BootStrapData.java
+added lines 24-28 in InhousePartForm.html to include max and min text inputs so user can set the maximum and minimum values.
+added lines 25-29 in OutsourcedPartForm.html to include max and min text inputs so user can set the maximum and minimum values.
+renamed database to kate_favre_d287_db on line 6 in application.properties
+added line 20-21 in Part.Java to set max and min for inventory 
+changed line 32, 34 and 35 in Part.java to enforce inventory is between min and max values 
 
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
