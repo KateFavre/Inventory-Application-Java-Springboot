@@ -130,16 +130,15 @@ added lines 50-51, 59-60, 69-70, 79-80, and 89-90 to include max and minimum fie
 added lines 24-28 in InhousePartForm.html to include max and min text inputs so user can set the maximum and minimum values.
 added lines 25-29 in OutsourcedPartForm.html to include max and min text inputs so user can set the maximum and minimum values.
 renamed database to kate_favre_d287_db on line 6 in application.properties
-added line 20-21 in Part.Java to set max and min for inventory 
-changed line 32, 34 and 35 in Part.java to enforce inventory is between min and max values 
+added @max on line 31 in Part.java to make sure inventory is between or at min and max
+added @min on line 33 in Part.java to make sure inventory is greater than min 
+added @min and @max on lines 35-36 in Part.java to make sure inventory is between min and max 
 
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
 •  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
 •  Display error messages when adding and updating parts if the inventory is greater than the maximum.
-file name:
-line number:
-change:
+
 
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 file name:
