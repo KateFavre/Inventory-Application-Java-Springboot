@@ -1,6 +1,7 @@
 package com.example.demo.domain;
 
 import com.example.demo.validators.ValidDeletePart;
+import com.example.demo.validators.ValidMaximum;
 import com.example.demo.validators.ValidMinimum;
 
 import javax.persistence.*;
@@ -19,6 +20,7 @@ import java.util.Set;
 @Entity
 @ValidDeletePart
 @ValidMinimum
+@ValidMaximum
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="part_type",discriminatorType = DiscriminatorType.INTEGER)
 @Table(name="Parts")

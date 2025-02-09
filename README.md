@@ -157,6 +157,15 @@ added lines 38-39 in EnufPartsValidator.java to check if add/update product lowe
 updated line 20 in ValidEnufParts.java to display error message if adding/updating product lowers part below min inv
 
 created MaximumValidator.java and ValidMaximum.java to add validation for maximum fields
+added lines 10-12 in MaximumValidator to set up custom annotation and @autowired for access to springbeans
+lines 14-17 in MaximumValidator.java for optional initialization method
+lines 18-21 in MaximumValidator.java logic to check inv is less than or equal to max inv
+
+line 10 ValidMaximum.java link annotation to Validation class
+lines 11-12 in ValidMaximum set target (Part class) and makes sure available during runtime
+lines 13-17 in ValidMaximum.java set error message if validation fails
+line 22 added @ValidMaximum to Part.java
+
 
 
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
