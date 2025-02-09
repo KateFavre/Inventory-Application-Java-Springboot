@@ -7,18 +7,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/**
- *
- *
- *
- *
- */
-@Constraint(validatedBy = {EnufPartsValidator.class})
+@Constraint(validatedBy = {MinimumValidator.class})
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ValidEnufParts {
-    String message() default "Adding or updating product lowers the part inventory below the minimum!";
-    Class<?> [] groups() default {};
-    Class<? extends Payload> [] payload() default {};
-
+public @interface ValidMinimum {
+    String message() default "Inventory must be greater than minimum inventory";
+    Class<?>[] groups() default {};
+    Class<? extends Payload>[] payload() default {};
 }

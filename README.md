@@ -143,6 +143,21 @@ H.  Add validation for between or at the maximum and minimum fields. The validat
 •  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
 •  Display error messages when adding and updating parts if the inventory is greater than the maximum.
 
+created MinimumValidator.java and ValidMinimum.java to add validation for minimum fields
+added lines 11-13 in MinimumValidator to set up custom annotation and @autowired for access to springbeans
+lines 15-17 in MinimumValidator.java for optional initialization method
+lines 19-22 in MinimumValidator.java logic to check inv is greater than min inv
+line 10 ValidMinimum.java link annotation to Validation class
+lines 11-12 in ValidMinimum set target (Part class) and makes sure available during runtime 
+lines 13-17 in ValidMinimum.java set error message if validation fails 
+line 21 added @ValidMinimum to Part.java
+
+added @max and @min on lines 30 and 31 in Part.java to display error when adding or updating parts if inventory is less than min or greater than max
+added lines 38-39 in EnufPartsValidator.java to check if add/update product lowers part below min inv 
+updated line 20 in ValidEnufParts.java to display error message if adding/updating product lowers part below min inv
+
+created MaximumValidator.java and ValidMaximum.java to add validation for maximum fields
+
 
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 file name:
