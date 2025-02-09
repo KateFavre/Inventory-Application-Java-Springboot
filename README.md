@@ -152,15 +152,13 @@ lines 11-12 in ValidMinimum set target (Part class) and makes sure available dur
 lines 13-17 in ValidMinimum.java set error message if validation fails 
 line 21 added @ValidMinimum to Part.java
 
-added @max and @min on lines 30 and 31 in Part.java to display error when adding or updating parts if inventory is less than min or greater than max
-added lines 38-39 in EnufPartsValidator.java to check if add/update product lowers part below min inv 
-updated line 20 in ValidEnufParts.java to display error message if adding/updating product lowers part below min inv
+added lines 37-38 to EnufPartsValidator.java to check if updating products lowers part inventory below minimum
+updated line 20 in ValidEnufParts.java to display error message
 
 created MaximumValidator.java and ValidMaximum.java to add validation for maximum fields
-added lines 10-12 in MaximumValidator to set up custom annotation and @autowired for access to springbeans
+added lines 10-12 in MaximumValidator.java to set up custom annotation and @autowired for access to springbeans
 lines 14-17 in MaximumValidator.java for optional initialization method
 lines 18-21 in MaximumValidator.java logic to check inv is less than or equal to max inv
-
 line 10 ValidMaximum.java link annotation to Validation class
 lines 11-12 in ValidMaximum set target (Part class) and makes sure available during runtime
 lines 13-17 in ValidMaximum.java set error message if validation fails
