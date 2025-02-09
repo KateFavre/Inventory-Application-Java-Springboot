@@ -100,7 +100,7 @@ public abstract class Part implements Serializable {
         this.minInv = minInv;
     }
 
-    public int getmaxInv() {
+    public int getMaxInv() {
         return maxInv;
     }
 
@@ -133,4 +133,5 @@ public abstract class Part implements Serializable {
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
     }
+
 }
