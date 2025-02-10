@@ -164,14 +164,10 @@ lines 11-12 in ValidMaximum set target (Part class) and makes sure available dur
 lines 13-17 in ValidMaximum.java set error message if validation fails
 line 22 added @ValidMaximum to Part.java
 
-
-
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
-file name:
-line number:
-change:
+lines 30-37 in PartTest.java created test for getMaxInv tested for partIn and partOut
+lines 38-45 in PartTest.java created test for setMaxInv tested for partIn and PartOut
+lines 46-53 in PartTest.java created test for setMinInv tested for partIn and PartOut
+lines 54-61 in PartTest.java created test for setMinInv tested for partIn and PartOut
 
 J.  Remove the class files for any unused validators in order to clean your code.
-file name:
-line number:
-change:
