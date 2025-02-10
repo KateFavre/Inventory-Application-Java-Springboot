@@ -171,3 +171,4 @@ lines 46-53 in PartTest.java created test for setMinInv tested for partIn and Pa
 lines 54-61 in PartTest.java created test for setMinInv tested for partIn and PartOut
 
 J.  Remove the class files for any unused validators in order to clean your code.
+removed DeletePartValidator.java because it was unused 
