@@ -172,3 +172,5 @@ lines 54-61 in PartTest.java created test for setMinInv tested for partIn and Pa
 
 J.  Remove the class files for any unused validators in order to clean your code.
 removed DeletePartValidator.java because it was unused 
+
+*** changed create-drop back to update in application properties
