@@ -154,6 +154,9 @@ line 21 added @ValidMinimum to Part.java
 
 added lines 37-38 to EnufPartsValidator.java to check if updating products lowers part inventory below minimum
 updated line 20 in ValidEnufParts.java to display error message
+added lines 53-56 in ProductServiceImpl.java to display error message if product inventory is lower than min Inv 
+added line 27 @ValidEnufParts annotation to AddProductController.java to check if adding or updating product makes part go below min
+added line 32 in EnufPartsValidator (was getting errors on running app about myContext and I realized I needed to add assignment)
 
 created MaximumValidator.java and ValidMaximum.java to add validation for maximum fields
 added lines 10-12 in MaximumValidator.java to set up custom annotation and @autowired for access to springbeans
@@ -174,3 +177,11 @@ J.  Remove the class files for any unused validators in order to clean your code
 removed DeletePartValidator.java because it was unused 
 
 *** changed create-drop back to update in application properties
+
+
+*** updating part H ***
+added line 32 in EnufPartsValidator (was getting errors on running app about myContext and I realized I needed to add assignment)
+removed @max from lines 35 and line 40 from Part.java (realized it was hard coding a max)
+added lines 33-37 in outsourcedPartForm.html to check for validation errors in form and display error messages 
+added lines 32-36 in InhousePartForm.html to check for validation errors in form and display error messages 
+

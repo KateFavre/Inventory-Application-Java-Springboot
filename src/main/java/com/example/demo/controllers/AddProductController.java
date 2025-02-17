@@ -6,6 +6,7 @@ import com.example.demo.service.PartService;
 import com.example.demo.service.PartServiceImpl;
 import com.example.demo.service.ProductService;
 import com.example.demo.service.ProductServiceImpl;
+import com.example.demo.validators.ValidEnufParts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -23,6 +24,7 @@ import java.util.List;
  *
  *
  */
+@ValidEnufParts
 @Controller
 public class AddProductController {
     @Autowired
