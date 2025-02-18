@@ -41,7 +41,7 @@ public class EnufPartsValidator implements ConstraintValidator<ValidEnufParts, P
                 }
 
                 int r1 = p.getInv() - p.getMinInv(); /*max num of products that can be made without going below min*/
-                int r2 = myProduct.getInv() - product.getInv(); /*new product inventory*/
+                int r2 =  product.getInv() - myProduct.getInv(); /*new product inventory*/
                 if (r2 > r1){
                     return false;
                 }
