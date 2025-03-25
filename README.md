@@ -1,3 +1,9 @@
+For this Project,  I customized a Spring Framework application with an HTML front-end and a Java backend. I was given a UML class diagram and asked to create an inventory application for a business.  I created a sample inventory, buy now and delete product buttons and reflected the changes in the connected database. I used Validators to enforce a maximum and minimum inventory and displayed error messages if inventory fell outside of those bounds. Finally I created Unit tests for the maximum and minimum fields
+
+
+
+
+
 Kate Favre D287 PA
 
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
